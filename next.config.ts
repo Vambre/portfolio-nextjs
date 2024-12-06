@@ -8,7 +8,5 @@ const nextConfig = {
         unoptimized: true, // Optimisation désactivée pour faciliter GitHub Pages
     },
 };
-
 module.exports = nextConfig;
-
 export default nextConfig;
