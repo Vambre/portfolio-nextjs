@@ -1,5 +1,3 @@
-import type { NextConfig } from "next";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
@@ -8,5 +6,5 @@ const nextConfig = {
         unoptimized: true, // Optimisation désactivée pour faciliter GitHub Pages
     },
 };
+
 module.exports = nextConfig;
-export default nextConfig;
