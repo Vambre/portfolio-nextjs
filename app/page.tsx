@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function Home() {
-  return (<div>
+  return (
+      <div>
         <header className="header">
           <nav>
             <button id="Menu">Menu</button>
@@ -17,16 +17,16 @@ export default function Home() {
               </div>
               <div className="choixDroite">
                 <a href="https://github.com/Vambre/Portfolio" target="_blank" rel="noopener noreferrer">
-                  <Image src="/images/header/GitHub.png" alt="GitHub" width={30} height={30}/>
+                  <Image src="/images/header/GitHub.png" alt="GitHub" width={30} height={30} />
                 </a>
                 <a href="https://linkedin.com/in/th%C3%A9o-vambre" target="_blank" rel="noopener noreferrer">
-                  <Image src="/images/header/Linkedin.png" alt="LinkedIn" width={30} height={30}/>
+                  <Image src="/images/header/Linkedin.png" alt="LinkedIn" width={30} height={30} />
                 </a>
               </div>
             </div>
           </nav>
           <div className="moi">
-            <Image src="/images/header/photo.png" alt="Théo Vambre" width={300} height={300}/>
+            <Image src="/images/header/photo.png" alt="Théo Vambre" width={300} height={300} />
             <div className="desc">
               <p>Théo VAMBRE</p>
               <p>Étudiant en 2e année de BUT Informatique</p>
@@ -38,9 +38,9 @@ export default function Home() {
           <section id="aPropos">
             <h2>Qui suis-je ?</h2>
             <p>
-              Je m'appelle Théo Vambre, j'ai 20 ans. J'ai suivi un bac technologique STI2D
+              Je m&apos;appelle Théo Vambre, j&apos;ai 20 ans. J&apos;ai suivi un bac technologique STI2D
               (option SIN) au lycée André Malraux à Béthune et suis actuellement en 2e année
-              de BUT Informatique à l'IUT de Lens.
+              de BUT Informatique à l&apos;IUT de Lens.
             </p>
           </section>
 
@@ -50,7 +50,7 @@ export default function Home() {
               {['Java', 'Python'].map((proj) => (
                   <a key={proj} className="projet" href={`${proj}.html`}>
                     <h2>{proj.charAt(0).toUpperCase() + proj.slice(1)}</h2>
-                    <Image src={`/images/Projet/${proj}.png`} alt={proj} width={100} height={100}/>
+                    <Image src={`/images/Projet/${proj}.png`} alt={proj} width={100} height={100} />
                   </a>
               ))}
             </div>
@@ -62,7 +62,7 @@ export default function Home() {
               {['Java', 'PHP', 'HTML', 'CSS', 'Flask', 'SQL', 'Bash', 'Python'].map((skill) => (
                   <div key={skill} className="contenu">
                     <h3>{skill}</h3>
-                    <Image src={`/images/Competences/${skill}.png`} alt={skill} width={75} height={75}/>
+                    <Image src={`/images/Competences/${skill}.png`} alt={skill} width={75} height={75} />
                   </div>
               ))}
             </div>
@@ -73,11 +73,11 @@ export default function Home() {
           <div className="Contact">
             <h3>Contactez-moi</h3>
             <div className="cont">
-              <Image src="/images/footer/mail.png" alt="Email" width={30} height={30}/>
+              <Image src="/images/footer/mail.png" alt="Email" width={30} height={30} />
               <p>vambre.theo2003@gmail.com</p>
             </div>
             <div className="cont">
-              <Image src="/images/footer/phone.png" alt="Phone" width={30} height={30}/>
+              <Image src="/images/footer/phone.png" alt="Phone" width={30} height={30} />
               <p>07 83 07 32 34</p>
             </div>
           </div>
