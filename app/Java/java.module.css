@@ -1,0 +1,165 @@
+.projet .contenu {
+    background-color: #c5c6c7;
+    border: 2px solid black;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.contenu a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.contenu .imgPresentation {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.projet {
+    flex-wrap: wrap;
+}
+
+
+.separe {
+    display: flex;
+    flex-direction: row;
+}
+
+.separe > img {
+    width: 50px;
+}
+
+.separe .lang {
+    width: 50px;
+}
+
+
+.telecharger {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #1f2833;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    color: #c5c6c7;
+}
+
+.telecharger img {
+    width: 50px;
+}
+
+.selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+}
+
+.selection a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background-color: #c5c6c7;
+    margin: auto;
+    width: 100px;
+    padding: 10px;
+}
+
+
+/*footer*/
+.footer {
+    background-color: #66fcf1;
+    color: #1f2833;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1f2833;
+}
+
+.footer .Contact, .footer .reseaux {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer .cont {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer .cont img {
+    margin-right: 10px;
+}
+
+.footer .reseaux a {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.footer .reseaux a:hover {
+    transform: scale(1.1);
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #c5c6c7;
+    text-decoration: none;
+}
+
+
+/*header*/
+
+
+header .choix img {
+    width: 50px;
+}
+
+
+header > .choix {
+    display: flex;
+    padding: 20px;
+}
+
+header > .choix > .choixGauche {
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+header > .choix > .choixDroite {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+header > .choix > .choixDroite > .git {
+    background-size: cover;
+}
+
+header > .choix a {
+    text-decoration: none;
+    color: #c5c6c7;
+    font-size: 20px;
+}
+
+header .moi img {
+    margin-left: 15%;
+    width: 300px;
+}
+

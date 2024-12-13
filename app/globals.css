@@ -4,11 +4,9 @@ body {
 
 /*header*/
 header {
-  width: 100%;
-  color: #c5c6c7;
   background-color: #45a29e;
-  background-size: cover;
-  height: 400px;
+  color: #1f2833;
+  padding: 20px;
 }
 
 header .choix img {
