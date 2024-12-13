@@ -6,13 +6,12 @@ export default function Home() {
       <div>
         <header className="header">
           <nav>
-            <button id="Menu">Menu</button>
             <div className="choix">
               <div className="choixGauche">
-                <Link href="#aPropos">À Propos</Link>
-                <Link href="#contact">Contact</Link>
-                <Link href="#ppp">Projets</Link>
-                <Link href="#Competences">Compétences</Link>
+                <a href="#aPropos">À Propos</a>
+                <a href="#contact">Contact</a>
+                <a href="#ppp">Projets</a>
+                <a href="#Competences">Compétences</a>
                 <a href="/CVThéo_Vambre.pdf" download>CV</a>
               </div>
               <div className="choixDroite">
@@ -29,7 +28,7 @@ export default function Home() {
             <Image src="/images/header/photo.png" alt="Théo Vambre" width={300} height={300} />
             <div className="desc">
               <p>Théo VAMBRE</p>
-              <p>Étudiant en 2e année de BUT Informatique</p>
+              <p>Étudiant en 3e année de BUT Informatique</p>
             </div>
           </div>
         </header>
@@ -70,7 +69,7 @@ export default function Home() {
         </main>
 
         <footer>
-          <div className="Contact">
+          <div id="contact">
             <h3>Contactez-moi</h3>
             <div className="cont">
               <Image src="/images/footer/mail.png" alt="Email" width={30} height={30} />

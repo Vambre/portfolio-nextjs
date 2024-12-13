@@ -11,42 +11,56 @@ header {
   height: 400px;
 }
 
-#Menu {
-  display: none;
-}
 header .choix img {
   width: 50px;
 }
 
-header > .choix a:hover {
-  color: #66fcf1;
-}
-
-header > .choix {
+nav {
+  padding: 10px 20px;
   display: flex;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
 }
 
-header > .choix > .choixGauche {
+.choix {
   display: flex;
-  gap: 50px;
-  margin-left: 50px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-header > .choix > .choixDroite {
-  margin-left: auto;
-  margin-right: 50px;
+.choixGauche > a{
+  background-color: #1f2833;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-header > .choix > .choixDroite > .git {
-  background-size: cover;
+.choixGauche, .choixDroite {
+  display: flex;
+  gap: 20px;
 }
 
-header > .choix a {
-  text-decoration: none;
+.choixGauche a, .choixDroite a {
   color: #c5c6c7;
-  font-size: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
 }
+
+.choixGauche a:hover{
+  color: #1f2833;
+  background-color: #c5c6c7;
+}
+
+.choixDroite a img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
 
 .moi {
   display: flex;
@@ -95,10 +109,6 @@ header .moi img {
   width: 25%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.proj > .projet:hover {
-  background-color: #45a29e;
 }
 
 .proj .web {
@@ -155,9 +165,6 @@ h1 {
   margin-left: 20px;
 }
 
-.Competence > .contenu:hover {
-  background-color: #45a29e;
-}
 
 .Competence > .contenu > img {
   display: block;
@@ -175,51 +182,42 @@ footer {
   color: #1f2833;
   width: 100%;
   display: flex;
-  gap: 50px;
-  padding-bottom: 30px;
+  justify-content: center;
+  padding: 20px 0;
 }
 
-footer img {
-  width: 50px;
-}
-
-footer .reseaux {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  padding-right: 30px;
+footer #contact {
   text-align: center;
 }
 
 footer .cont {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 }
 
-footer .contenu {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+footer .cont p {
+  margin: 0;
 }
 
-footer a {
-  text-decoration: none;
+#aPropos {
+  background-color: #c5c6c7;
+  margin: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
   color: #1f2833;
 }
 
-footer a:hover {
-  color: #66fcf1;
+#aPropos h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-footer .info {
-  margin: auto;
-}
-
-footer .reseaux img {
-  margin: auto;
-}
-
-footer h3 {
-  text-align: center;
+#aPropos p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 footer .Contact {
@@ -266,10 +264,6 @@ footer .Contact {
     text-decoration: none;
   }
 
-  .choix a:hover {
-    background-color: #66fcf1;
-    color: #1f2833;
-  }
 
   header .choix.showMenu .choixGauche {
     display: flex;
